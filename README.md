@@ -15,12 +15,17 @@ OrthoFlow is a web application for French spelling and grammar correction, offer
 
 - **Frontend**:
   - Next.js 14
-  - React 19
+  - React 18
   - TypeScript
   - Tailwind CSS
   - Lexical (rich text editor)
   - Framer Motion (animations)
-  - React PDF (PDF generation)
+  - Radix UI
+  - clsx
+  - lucide-react
+  - next-themes
+  - tailwind-merge
+  - tailwindcss-animate
 
 ## Prerequisites
 
@@ -67,10 +72,20 @@ The application will be available at [http://localhost:3000](http://localhost:30
 ```
 orthoflow/
 ├── src/
-│   ├── app/              # Next.js pages and layouts
-│   ├── components/       # React components
-│   ├── utils/           # Utilities and services
-│   └── types/           # TypeScript definitions
-├── public/              # Static files
-└── package.json         # Dependencies and scripts
+│   ├── app/              # Next.js pages, layouts, and API routes
+│   ├── components/       # Reusable React components
+│   ├── hooks/            # Custom React hooks
+│   ├── styles/           # Global and component-specific styles
+│   ├── utils/            # Utility functions and services
+│   ├── types/            # TypeScript type definitions
+│   └── lib/              # Shared libraries (e.g., configuration, constants)
+├── public/               # Static assets (e.g., images, fonts)
+├── .next/                # Next.js build output (generated)
+├── node_modules/         # Installed dependencies (generated)
+├── .env.local            # Environment variables (local)
+├── .gitignore            # Git ignore rules
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+└── README.md             # Project documentation
+
 ```
