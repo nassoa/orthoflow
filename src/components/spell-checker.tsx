@@ -564,7 +564,7 @@ export default function SpellChecker() {
         </AnimatePresence>
 
         <div className="flex space-x-2">
-          <TooltipProvider>
+          {/* <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
@@ -580,7 +580,7 @@ export default function SpellChecker() {
                 <p>Mode contraste élevé (WCAG AA)</p>
               </TooltipContent>
             </Tooltip>
-          </TooltipProvider>
+          </TooltipProvider> */}
 
           <Button
             variant="outline"
@@ -589,11 +589,6 @@ export default function SpellChecker() {
           >
             <Copy className="h-4 w-4 mr-1" />
             Copier
-          </Button>
-
-          <Button variant="outline" size="sm" onClick={exportHTML}>
-            <Share className="h-4 w-4 mr-1" />
-            Exporter
           </Button>
 
           <Button

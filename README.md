@@ -14,7 +14,7 @@ OrthoFlow is a web application for French spelling and grammar correction, offer
 ## Technologies Used
 
 - **Frontend**:
-  - Next.js 15
+  - Next.js 14
   - React 19
   - TypeScript
   - Tailwind CSS
