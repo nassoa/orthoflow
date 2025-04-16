@@ -1,19 +1,16 @@
-import Editor from '@/components/Editor';
+import SpellChecker from "@/components/spell-checker"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 py-5">
-      <div className="container mx-auto px-4 py-8">
-        <header className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            OrthoFlow
-          </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Correcteur d'orthographe et de grammaire français en temps réel. Écrivez dans la colonne de gauche et voyez les corrections apparaître instantanément dans la colonne de droite.
-          </p>
-        </header>
-        <Editor />
+    <main className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-white">
+      <div className="w-full max-w-6xl">
+        <h1 className="text-3xl font-bold mb-2 text-gray-900">Correcteur d'Orthographe</h1>
+        <p className="text-gray-600 mb-6">
+          Écrivez votre texte à gauche pour une correction en temps réel à droite
+          <span className="text-xs ml-2 text-gray-500">(Propulsé par LanguageTool - open source)</span>
+        </p>
+        <SpellChecker />
       </div>
     </main>
-  );
+  )
 }
