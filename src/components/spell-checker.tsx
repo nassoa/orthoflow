@@ -58,7 +58,7 @@ interface ErrorStats {
 
 export default function SpellChecker() {
   const [text, setText] = useState<string>(
-    "Je suis aller au parc hier. C'est un endroit ou on peut se détendre. L'un des plus grand mystère de la vie."
+    "Demain, nous allons visité un musée sur l’histoires de la France. J’espere que le guide seras intérrésant."
   );
   const [corrections, setCorrections] = useState<Correction[]>([]);
   const [score, setScore] = useState<number>(0);
